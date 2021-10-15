@@ -2,18 +2,37 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
+  "source": "client/src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "main": "index.js",
   "scripts": {
     "server-watch": "nodemon server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"client/src/**/*.{js,jsx}\" --quiet"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.13"
+    "@babel/core": "^7.15.8",
+    "@babel/eslint-parser": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-react": "^7.14.5",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "nodemon": "^2.0.13",
+    "parcel": "^2.0.0",
+    "prettier": "2.4.1"
   },
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   }
 }
